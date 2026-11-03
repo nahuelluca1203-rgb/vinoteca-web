@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#151515">
+    <title>EIKVOR | Gestión</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">E</div>
+                <div>
+                    <h1>EIKVOR</h1>
+                    <span>SISTEMA DE GESTIÓN</span>
+                </div>
+            </div>
+
+            <div class="user-info">
+                <div class="user-avatar">A</div>
+                <div>
+                    <strong>Administrador</strong>
+                    <span>Panel de gestión</span>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <p class="menu-title">MENÚ PRINCIPAL</p>
+
+                <button class="nav-link active" data-page="inicio">
+                    <span>▦</span> Panel principal
+                </button>
+
+                <button class="nav-link" data-page="caja">
+                    <span>▣</span> Caja
+                </button>
+
+                <button class="nav-link" data-page="productos">
+                    <span>◇</span> Productos
+                </button>
+
+                <button class="nav-link" data-page="inventario">
+                    <span>▤</span> Inventario
+                </button>
+
+                <button class="nav-link" data-page="ventas">
+                    <span>↗</span> Ventas
+                </button>
+
+                <p class="menu-title">GESTIÓN COMERCIAL</p>
+
+                <button class="nav-link" data-page="compras">
+                    <span>▧</span> Compras y boletas
+                </button>
+
+                <button class="nav-link" data-page="proveedores">
+                    <span>♧</span> Proveedores
+                </button>
+
+                <button class="nav-link" data-page="pedidos">
+                    <span>▣</span> Pedidos a proveedores
+                </button>
+
+                <button class="nav-link" data-page="traspasos">
+                    <span>⇄</span> Traspasos
+                </button>
+
+                <button class="nav-link" data-page="movimientos">
+                    <span>↕</span> Movimientos
+                </button>
+
+                <p class="menu-title">ADMINISTRACIÓN</p>
+
+                <button class="nav-link" data-page="clientes">
+                    <span>♙</span> Clientes
+                </button>
+
+                <button class="nav-link" data-page="informes">
+                    <span>▥</span> Informes
+                </button>
+
+                <button class="nav-link" data-page="usuarios">
+                    <span>⚙</span> Sucursales y usuarios
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <span> EIKVOR © 2026</span>
+                <span>Sistema interno</span>
+            </div>
+
+        </aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <button id="menuToggle" class="menu-toggle">☰</button>
+
+                <div>
+                    <span class="top-label">GESTIÓN /</span>
+                    <strong id="pageName">Panel principal</strong>
+                </div>
+
+                <div class="top-user">
+                    <span class="status-dot"></span>
+                    <span>Administrador</span>
+                </div>
+            </header>
+
+            <section id="content" class="content">
+                <!-- El router carga aquí cada sección -->
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
